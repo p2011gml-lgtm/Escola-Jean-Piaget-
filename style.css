@@ -23,3 +23,67 @@
 @media(max-width:700px){.wrap{width:min(100% - 36px,540px)}.nav{height:82px}.brand{gap:10px;margin-left:0}.brand img{width:60px;height:60px}.brand strong{font-size:15px}.brand small{font-size:8px}.nav-links{top:82px}.hero-grid{grid-template-columns:1fr}.hero-visual{height:390px;margin-top:20px}.hero-photo-main{inset:18px 24px 20px 10px;border-radius:24px 24px 80px 24px}.hero-photo-overlay strong{font-size:22px}.hero-photo-badge{width:88px;height:88px;right:0;bottom:8px}.hero-photo-badge b{font-size:32px}.tag-top{right:-2px;top:0}.tag-bottom{left:0;bottom:0}.moments-grid{grid-template-columns:1fr}.moment-large{grid-column:auto;min-height:300px}.moment-card{min-height:280px}.faq-grid{grid-template-columns:1fr;gap:24px}.faq-intro h2{font-size:34px}}
 
 .reveal-pending{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}.reveal-visible{opacity:1;transform:translateY(0)}@media(prefers-reduced-motion:reduce){.reveal-pending{opacity:1;transform:none}}
+
+/* =================================
+   LOGO PRINCIPAL — JEAN PIAGET
+================================= */
+
+.nav {
+  height: 116px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: -12px;
+}
+
+.brand img {
+  width: 105px !important;
+  height: 105px !important;
+  min-width: 105px;
+  object-fit: contain !important;
+  object-position: center;
+  border: none !important;
+  border-radius: 12px !important;
+  background: #fff;
+  padding: 2px;
+  box-shadow: none !important;
+}
+
+.brand strong {
+  font-size: 19px;
+  letter-spacing: .08em;
+}
+
+.brand small {
+  font-size: 9px;
+  letter-spacing: .16em;
+}
+
+/* Ajuste para celular */
+@media (max-width: 700px) {
+  .nav {
+    height: 88px;
+  }
+
+  .brand {
+    margin-left: -5px;
+    gap: 8px;
+  }
+
+  .brand img {
+    width: 76px !important;
+    height: 76px !important;
+    min-width: 76px;
+  }
+
+  .brand strong {
+    font-size: 14px;
+  }
+
+  .brand small {
+    font-size: 7px;
+  }
+}
